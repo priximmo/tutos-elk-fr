@@ -1,0 +1,5 @@
+https://www.data.gouv.fr/fr/datasets/r/5c219016-1eaf-41dc-9bba-2f32dfb71b72
+
+cat cities.json | tr -d '[' |sed s/},{/},\\n{/g | awk '{print "{ \"index\" : { \"_index\" : \"countries\", \"_type\" : \"country\"} }\n"$0}' | sed s/"},"/"}"/g > new.json
+
+curl -s -H "Content-Type: application/x-ndjson" -XPOST 192.168.20.101:9200/_bulk --data-binary @new.json
