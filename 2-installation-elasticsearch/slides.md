@@ -79,6 +79,7 @@ Elasticsearch :
 sudo wget --directory-prefix=/opt/ https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.6.1-amd64.deb
 sudo dpkg -i /opt/elasticsearch*.deb
 # edit /etc/elasticsearch/elasticsearch.yml
+# host.name + master
 #network.host: 0.0.0.0
 #discovery.seed_hosts: ["127.0.0.1", "192.168.20.102"]
 systemctl enable elasticsearch
@@ -92,10 +93,11 @@ systemctl start elasticsearch
 sudo firewall-cmd --add-port=9200/tcp --permanent
 sudo yum install -y wget
 sudo wget --directory-prefix=/opt/ https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.6.1-x86_64.rpm
+sudo rpm -ivh /opt/elasticsearch*.rpm
 # edit /etc/elasticsearch/elasticsearch.yml
+# host.name + master
 #network.host: 0.0.0.0
 #discovery.seed_hosts: ["127.0.0.1", "192.168.20.102"]
-sudo rpm -ivh /opt/elasticsearch*.rpm
 systemctl enable elasticsearch
 systemctl start elasticsearch
 ```
@@ -111,4 +113,11 @@ systemctl start elasticsearch
 
 ```
 https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html
+```
+
+<br>
+* check
+
+```
+curl -X GET "localhost:9200/_cat/nodes?v&pretty"
 ```
