@@ -9,13 +9,6 @@ setup.template.settings:
 setup.kibana:
   host: "192.168.20.102:5601"
 
-#output.elasticsearch:
-  # Array of hosts to connect to.
-  #hosts: ["192.168.20.102:9200"]
-
-#output.logstash:
-#  hosts: ["192.168.20.102:5044"]
-
 output.kafka:
   hosts: ["192.168.20.1:19092"]
   topic: "filebeat"
