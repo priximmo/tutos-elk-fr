@@ -1,0 +1,31 @@
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - /var/log/nginx/access*.log
+  exclude_lines: ["^127.0.0.1"]
+  exclude_files: [".gz$"]
+  ignore_older: 24h
+  tags: ["back"]
+  fields:
+    env: prod
+    owner: xavki
+
+setup.template.settings:
+  index.number_of_shards: 1
+
+setup.kibana:
+  host: "192.168.20.102:5601"
+
+#output.elasticsearch:
+  # Array of hosts to connect to.
+  #hosts: ["192.168.20.102:9200"]
+
+output.logstash:
+  hosts: ["192.168.20.102:5044"]
+processors:
+  - add_host_metadata: ~
+  - add_cloud_metadata: ~
+  - add_docker_metadata: ~
+  - add_kubernetes_metadata: ~
+
