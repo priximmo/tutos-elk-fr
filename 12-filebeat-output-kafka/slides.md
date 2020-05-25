@@ -2,7 +2,7 @@
 %author: xavki
 
 
-# Filebeat : Output Logstash
+# Filebeat : Output Kafka
 
 <br>
 

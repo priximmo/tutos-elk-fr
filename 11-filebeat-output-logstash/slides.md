@@ -14,7 +14,7 @@ output.logstash:
 ```
 
 <br>
-* compression_level : 
+* compression_level
 
 * worker : nombre de worker par host
 

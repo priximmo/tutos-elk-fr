@@ -20,8 +20,6 @@ output.kafka:
   compression: gzip
   max_message_bytes: 1000000
   close_inactive: 10m
-  ignore_older: 2h
-  clean_inactive: 3h
 
 processors:
   - add_host_metadata: ~
