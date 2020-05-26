@@ -1,0 +1,25 @@
+filebeat.inputs:
+- type: container
+  paths:
+    - '/var/lib/docker/containers/*/*.log'
+  tags: ["docker"]
+
+setup.template.settings:
+  index.number_of_shards: 1
+
+setup.kibana:
+  host: "192.168.20.102:5601"
+
+filebeat.config.modules:  # path to modules
+  enabled: true
+  path: ${path.config}/modules.d/*.yml
+
+output.logstash:
+  hosts: ["192.168.20.102:5044"]
+  ssl:
+    certificate_authorities: ["/etc/filebeat/logstash.crt"]
+processors:
+  - add_host_metadata: ~
+  - add_cloud_metadata: ~
+  - add_docker_metadata: ~
+  - add_kubernetes_metadata: ~
