@@ -45,7 +45,7 @@ PS : gestion du timing
 <br>
 * et en TCP ? pull ou push ?
 
-* mode => "server" : ou client
+* mode => "server"
 
 * port => 11111
 
@@ -56,4 +56,33 @@ PS : gestion du timing
      mode => "server"
      port => 11111
    }
+```
+
+```
+nc 192.169.20.102 11111
+```
+
+* ssl, add_field, tags
+
+-----------------------------------------------------------------------------
+
+
+# LOGSTASH : INPUT PLUGIN EXEC ET TCP
+
+
+<br>
+* en mode client ?
+
+```
+   tcp {
+     type => "app2"
+     mode => "client"
+     host => "192.168.20.104"
+     port => 11111
+   }
+
+```
+
+```
+nc -l 11111
 ```

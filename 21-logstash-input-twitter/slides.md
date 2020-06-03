@@ -2,7 +2,7 @@
 %author: xavki
 
 
-# LOGSTASH : INPUT Twitter
+# LOGSTASH : INPUT PLUGIN  TWITTER
 
 
 <br>
