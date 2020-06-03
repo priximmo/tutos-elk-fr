@@ -1,0 +1,15 @@
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - /var/log/nginx/access*.log
+
+setup.template.settings:
+  index.number_of_shards: 1
+
+setup.kibana:
+  host: "192.168.20.102:5601"
+
+output.logstash:
+  hosts: ["192.168.20.102:5044"]
+

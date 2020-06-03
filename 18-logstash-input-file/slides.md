@@ -22,7 +22,7 @@
 
 
 <br>
-* Inputs :
+* Inputs Plugins :
 		* beats (filebeat...)
 		* database (elasticsearch, redis,...)
 		* drivers (jdbc..)
@@ -102,10 +102,16 @@ start_position => "beginning"
 
 
 <br>
-sincedb_path => "/var/li/logstash/xxx" > localisation du fichier data de pointeur
+sincedb_path => "/var/li/logstash/xxx"	> localisation du fichier data de pointeur
 
 <br>
-sincedb_clean_after => fréquence de nettoyage des timestamp
+sincedb_clean_after => "7 days" 				> fréquence de nettoyage des timestamp
 
 <br>
 add_field => { "env" => "prod" }
+
+<br>
+codec => "plain"												> prétraitement (avant filter) 
+
+<br>
+type => "apache"												> variable spécific réutilisable (filtres/kibana...)
