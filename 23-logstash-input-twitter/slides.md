@@ -28,9 +28,9 @@ input {
 }
 output {
   elasticsearch {
-        hosts => ["localhost:9200"]
+    hosts => ["localhost:9200"]
+    index => "twitter-%{+YYYY.MM.dd}"     
  }
-  stdout { codec => rubydebug }
 }
 ```
 
