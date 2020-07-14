@@ -1,0 +1,16 @@
+filebeat.inputs:
+- type: log
+
+  enabled: false
+  paths:
+    - /var/log/*.log
+filebeat.config.modules:
+  path: ${path.config}/modules.d/*.yml
+  reload.enabled: false
+setup.template.settings:
+setup.kibana:
+  host: "192.168.20.102:5601"
+output.elasticsearch:
+  hosts: ["192.168.20.102:9200"]
+processors:
+  - add_host_metadata: ~
