@@ -14,12 +14,29 @@
 		* logs
 		* alerting sur seuil (mail possible)
 
+<br>
+* configuration (similaire filebeat) :
+		* output : elasticsearch, kafka...
+		* tls/ssl
+		* log dans un fichier
+		* jaeger : tracing
+		* Real User Monitoring = javascript (capture partie navigateur)
+
+<br>
+* principe :
+		app > lib apm > server local APM > elasticsearch > kibana
+
+-------------------------------------------------------------------------------------------------
+
+# APM : Application Performance Monitoring
+
+
 
 <br>
 * installation d'un service (ex : api)
 
 ```
-sudo apt install python-pip3
+sudo apt install python3-pip
 pip3 install elastic-apm flask
 ```
 
