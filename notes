@@ -1,54 +1,10 @@
-https://www.data.gouv.fr/fr/datasets/r/5c219016-1eaf-41dc-9bba-2f32dfb71b72
-
-cat cities.json | tr -d '[' |sed s/},{/},\\n{/g | awk '{print "{ \"index\" : { \"_index\" : \"countries\", \"_type\" : \"country\"} }\n"$0}' | sed s/"},"/"}"/g > new.json
-
-curl -s -H "Content-Type: application/x-ndjson" -XPOST 192.168.20.101:9200/_bulk --data-binary @new.json
 
 curator
 
 
-Upgrade
-
-0. Check version
-
-1. shard allocation timeout
-
-curl -X PUT "localhost:9200/_cluster/settings?pretty" -H 'Content-Type: application/json' -d'
-{
-  "persistent": {
-    "cluster.routing.allocation.enable": "primaries"
-  }
-}
-'
-
-2. non essential
-curl -X POST "localhost:9200/_flush/synced?pretty"
+reindex
 
 
-3. machine learning job 
-curl -X POST "localhost:9200/_ml/set_upgrade_mode?enabled=true&pretty"
+index lifecycle
 
-4. installation .deb
-
-5. restart
-
-6. check
-
-7. réactivation
-
-curl -X PUT "localhost:9200/_cluster/settings?pretty" -H 'Content-Type: application/json' -d'
-{
-  "persistent": {
-    "cluster.routing.allocation.enable": null
-  }
-}
-'
-
-8. Etat du recovery 
-
-curl -X GET "localhost:9200/_cat/recovery?pretty"
-
-9. Réactivation du ML
-
-curl -X POST "localhost:9200/_ml/set_upgrade_mode?enabled=false&pretty"
-
+sharding
