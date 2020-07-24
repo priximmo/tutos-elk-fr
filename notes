@@ -8,3 +8,29 @@ reindex
 index lifecycle
 
 sharding
+
+
+
+  create_index_next_day:
+    action: create_index
+    description: create index for the day
+    options:
+      name: logs
+      extra_settings:
+        settings:
+          number_of_shards: 6
+          number_of_replicas: 1
+        continue_if_exception: True
+        disable_action: False
+        mappings:
+          type1:
+            properties:
+              departement_code:
+                type: string
+              ville:
+                type: string
+              code_postal:
+                type: string
+              location:
+                type: geo_point
+

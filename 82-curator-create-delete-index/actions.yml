@@ -1,0 +1,77 @@
+actions:
+  1_snapshot_communes:
+    action: snapshot
+    description: snap communes
+    options:
+      repository: cur_backup
+      name: bck-communes-%Y%m%d%H%M%S
+      ignore_unavailable: False
+      include_global_state: True
+      partial: False
+      wait_for_completion: True
+      skip_repo_fs_check: False
+      disable_action: False
+    filters:
+    - filtertype: pattern
+      kind: prefix
+      value: communes
+    - filtertype: age
+      source: creation_date
+      direction: younger
+      unit: days
+      unit_count: 1
+
+  2_delete_old_test:
+    action: delete_indices
+    description: delete test index
+    options:
+      continue_if_exception: True
+      ignore_empty_list: True
+    filters:
+    - filtertype: pattern
+      kind: prefix
+      value: restored_communes
+    - filtertype: age
+      source: creation_date
+      direction: younger
+      unit: days
+      unit_count: 2
+
+  3_test_restore_communes:
+    action: restore
+    description: restore communes
+    options:
+      repository: cur_backup
+      # If name is blank, the most recent snapshot by age will be selected
+      name: 
+      # If indices is blank, all indices in the snapshot will be restored
+      indices:
+      include_aliases: False
+      ignore_unavailable: False
+      include_global_state: False
+      partial: False
+      rename_pattern: '(.+)'
+      rename_replacement: 'restored_$1'
+      extra_settings:
+      wait_for_completion: True
+      skip_repo_fs_check: True
+      disable_action: False
+    filters:
+    - filtertype: pattern
+      kind: prefix
+      value: bck-communes
+    - filtertype: state
+      state: SUCCESS
+
+  4_create_index_next_day:
+    action: create_index
+    description: create index for the day
+    options:
+      name: '<communes-{now/d+1d}>'
+      continue_if_exception: True
+      disable_action: False
+      extra_settings:
+        settings:
+          number_of_shards: 6
+          number_of_replicas: 2
+
