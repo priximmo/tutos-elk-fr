@@ -1,0 +1,9 @@
+dn: cn=ESAdmins,ou=groups,dc=tgs,dc=com
+objectClass: posixGroup
+cn: miners
+gidNumber: 5000
+
+dn: cn=ESRead,ou=groups,dc=tgs,dc=com
+objectClass: posixGroup
+cn: miners
+gidNumber: 5000

@@ -1,0 +1,4 @@
+dn: cn=ESAdmins,ou=groups,dc=example,dc=com
+changetype: modify
+add: memberuid
+memberuid: alice

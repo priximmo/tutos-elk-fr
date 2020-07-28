@@ -1,0 +1,8 @@
+dn: uid=xavki,ou=people,dc=example,dc=com
+uid: xavki
+cn: xavki
+givenName: xavki
+mail: xavki@moi.fr
+objectClass: inetOrgPerson
+userPassword: {SHA}4TuW5PC9tzKDt/WDX5XE+g+6NxY=
+sn: moi
