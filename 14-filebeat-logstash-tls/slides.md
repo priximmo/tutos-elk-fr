@@ -5,9 +5,13 @@
 # Filebeat et Logstash : TLS
 
 <br>
+
+
 * encryption entre filebeat et logstash = éviter des injections
 
 <br>
+
+
 SUR LE SERVEUR LOGSTASH
 
 * édition conf ssl
@@ -26,6 +30,8 @@ mv logstash.* /etc/logstash/
 ```
 
 <br>
+
+
 cf fichier de nginx.conf pour utilisation
 
 ```
@@ -46,6 +52,8 @@ input {
 
 
 <br>
+
+
 * copie du crt /etc/filebeat/logstash.crt (600)
 
 * test
@@ -55,6 +63,8 @@ curl -v --cacert /etc/filebeat/logstash.crt https://192.168.20.102:5044
 ```
 
 <br>
+
+
 * conf filebeat
 
 ```

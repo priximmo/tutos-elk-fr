@@ -6,11 +6,15 @@
 
 
 <br>
+
+
 * ILM : Index Lifecycle Mamangement > 6.7
 
 * ILM = gestion dans le temps des donnée par les index
 
 <br>
+
+
 * différents degrés
 		* Hot : récent, alimenté et interrogé
 		* Warm : pas de mise à jour mais interrogé
@@ -18,6 +22,8 @@
 		* Delete : plus besoin, supprimé
 
 <br>
+
+
 * Plusieurs éléments nécessaires :
 		* Policies : les règles de lifecycle
 		* Template : pour produire les nouveaux index (c'est mieux)
@@ -43,4 +49,6 @@ indices.lifecycle.poll_interval: 10s
 
 
 <br>
+
+
 * cf fichiers

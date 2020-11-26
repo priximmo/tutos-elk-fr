@@ -6,9 +6,13 @@
 
 
 <br>
+
+
 * elasticsearch = recherche full text
 
 <br>
+
+
 * rechercher dans tous les documents d'un index
 
 ```
@@ -17,6 +21,8 @@ curl -XGET 192.168.20.102:9200/utilisateurs/_search?q=pierre | jq
 ```
 
 <br>
+
+
 
 ```
 curl -XGET -H 'Content-Type: application/json' 192.168.20.102:9200/utilisateurs/_search -d \
@@ -30,6 +36,8 @@ curl -XGET -H 'Content-Type: application/json' 192.168.20.102:9200/utilisateurs/
 ```
 
 <br>
+
+
 * attention ne recherche pas une phrase composé "caen paris"
 
 ```
@@ -44,6 +52,8 @@ curl -XGET -H 'Content-Type: application/json' 192.168.20.102:9200/utilisateurs/
 ```
 
 <br>
+
+
 * recherche stricte
 
 ```
@@ -58,6 +68,8 @@ curl -XGET -H 'Content-Type: application/json' 192.168.20.102:9200/utilisateurs/
 ```
 
 <br>
+
+
 * multi champs
 
 
@@ -73,6 +85,8 @@ curl -XGET -H 'Content-Type: application/json' 192.168.20.102:9200/utilisateurs/
 ```
 
 <br>
+
+
 * avec approximation
 
 ```
@@ -88,6 +102,8 @@ curl -XGET -H 'Content-Type: application/json' 192.168.20.102:9200/utilisateurs/
 ```
 
 <br>
+
+
 * rechercher par term exact
 
 ```
@@ -103,6 +119,8 @@ curl -XGET -H 'Content-Type: application/json' 192.168.20.102:9200/utilisateurs/
 ```
 
 <br>
+
+
 * avec approximation
 
 ```

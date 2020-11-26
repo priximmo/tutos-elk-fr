@@ -7,6 +7,8 @@
 https://www.elastic.co/guide/en/kibana/current/timelion.html
 
 <br>
+
+
 * unique count clientip :
 
 ```
@@ -16,6 +18,8 @@ https://www.elastic.co/guide/en/kibana/current/timelion.html
 ```
 
 <br>
+
+
 * avec custom label
 
 ```
@@ -25,6 +29,8 @@ https://www.elastic.co/guide/en/kibana/current/timelion.html
 ```
 
 <br>
+
+
 * afficher un deuxième graphe
 
 ```
@@ -45,6 +51,8 @@ https://www.elastic.co/guide/en/kibana/current/timelion.html
 
 
 <br>
+
+
 * sur la moyenne des 5 derniers hits par heure
 
 ```
@@ -60,6 +68,8 @@ https://www.elastic.co/guide/en/kibana/current/timelion.html
 ```
 
 <br>
+
+
 * mise en forme
 
 

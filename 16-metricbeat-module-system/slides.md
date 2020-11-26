@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * installation 
 
 ```
@@ -14,6 +16,8 @@ sudo dpkg -i /opt/metricbeat*.deb
 ```
 
 <br>
+
+
 * configuration elasticsearch et kibana
 
 ```
@@ -21,6 +25,8 @@ vim /etc/metricbeat/metricbeat.yml
 ```
 
 <br>
+
+
 * check module system
 
 ```
@@ -34,4 +40,6 @@ metricbeat modules enable system
 metricbeat setup --dashboards
 ```
 <br>
+
+
 * ajout dashboard kibana

@@ -8,6 +8,8 @@
 SIEM : Security Information Management System
 
 <br>
+
+
 * installation de filebeat
 
 ```
@@ -22,6 +24,8 @@ sudo dpkg -i /opt/filebeat*.deb
 
 
 <br>
+
+
 * activation des logs iptables
 
 ```
@@ -31,6 +35,8 @@ iptables -D INPUT 1
 ```
 
 <br>
+
+
 * isolation des logs iptables
 
 ```
@@ -49,6 +55,8 @@ systemctl restart rsyslog
 
 
 <br>
+
+
 * configuration de filebeat
 
 ```
@@ -75,6 +83,8 @@ processors:
 
 
 <br>
+
+
 * activation du module iptables de filebeat
 
 ```

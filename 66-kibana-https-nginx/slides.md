@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * exemple avec un certificat autosigné / openssl
 
 * 2 solutions :
@@ -13,6 +15,8 @@
 		* nginx frontal = avec redirection possible et passwd (si nécessaire)
 
 <br>
+
+
 SOLUTION NGINX
 
 * génération du certificat
@@ -28,6 +32,8 @@ apt install nginx
 ```
 
 <br>
+
+
 * déplacement des certificats
 
 ```
@@ -40,6 +46,8 @@ chmod 700 /etc/ssl/private/kibana.key
 ```
 
 <br>
+
+
 * si nécessaire htpasswd
 
 ```
@@ -54,6 +62,8 @@ sudo htpasswd -c /etc/nginx/conf.d/kibana.htpasswd xavki
 
 
 <br>
+
+
 * configuration nginx
 
 ```
@@ -86,5 +96,7 @@ systemctl restart nginx
 ```
 
 <br>
+
+
 * modification conf kibana.yml (0.0.0.0 > localhost)
 

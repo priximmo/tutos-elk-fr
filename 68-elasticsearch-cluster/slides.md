@@ -6,20 +6,28 @@
 
 
 <br>
+
+
 * cluster = nécessaire en production
 
 * ES est une base distribuée
 
 <br>
+
+
 * index > shards | replicas > documents > fields
 
 <br>
+
+
 * différents rôles :
 		* master = responsable du cluster (notion de vote N/2 + 1)
 		* datas	= porte des datas
 		* clients = répond au client
 
 <br>
+
+
 * on part de noeuds avec ES non démarrés > tous clients et master
 
 --------------------------------------------------------------------------------
@@ -28,6 +36,8 @@
 
 
 <br>
+
+
 
 ```
 cluster.name: xavki

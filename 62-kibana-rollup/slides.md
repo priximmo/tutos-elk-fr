@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * agrégation de documents
 
 * jobs à fréquence régulière
@@ -14,6 +16,8 @@
 
 
 <br>
+
+
 * insertion de datas : https://github.com/oliver006/elasticsearch-test-data
 
 ```

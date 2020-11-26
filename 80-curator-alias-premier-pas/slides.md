@@ -6,9 +6,13 @@
 
 
 <br>
+
+
 * exemple avec alias > ajouter à un alias une liste d'index
 
 <br>
+
+
 * génération d'autres index avec un paramètre date dans le nom
 
 ```
@@ -24,11 +28,15 @@
 
 
 <br>
+
+
 * actions > alias
 
 doc : https://www.elastic.co/guide/en/elasticsearch/client/curator/5.8/alias.html
 
 <br>
+
+
 ```
 actions :
   1: 
@@ -44,11 +52,15 @@ actions :
 ```
 
 <br>
+
+
 * lancement
 
 curator --config ~/.curator/curator.yml alias.yml
 
 <br>
+
+
 
 ```
 actions :
@@ -71,6 +83,8 @@ actions :
 ```
 
 <br>
+
+
 ```
     remove:
       filters:

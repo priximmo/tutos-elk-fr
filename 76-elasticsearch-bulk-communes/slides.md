@@ -5,9 +5,13 @@
 # ElasticSearch : Bulk
 
 <br>
+
+
 https://www.data.gouv.fr/fr/datasets/r/5c219016-1eaf-41dc-9bba-2f32dfb71b72
 
 <br>
+
+
 * création du mapping
 
 ```
@@ -35,6 +39,8 @@ curl -X PUT http://192.168.20.102:9200/communes -H "Content-Type: application/js
 ```
 
 <br>
+
+
 * création du fichier d'injection des datas
 
 ```
@@ -42,6 +48,8 @@ cat cities.json | jq '.[] | .department_code + ";" + .name + ";" + .zip_code + "
 ```
 
 <br>
+
+
 * pousser les données
 
 ```
@@ -49,6 +57,8 @@ curl -s -H "Content-Type: application/x-ndjson" -XPOST 192.168.20.101:9200/_bulk
 ```
 
 <br>
+
+
 * afficher plus de 10000 éléments
 
 ```

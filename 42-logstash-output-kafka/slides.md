@@ -5,9 +5,13 @@
 # LOGSTASH : OUTPUT - KAFKA
 
 <br>
+
+
 Run docker-compose
 
 <br>
+
+
 
 * quelques commandes kafka : liste / écoute / delete de topic
 
@@ -18,6 +22,8 @@ docker run --net=host --rm confluentinc/cp-kafka:latest kafka-topics --bootstrap
 ```
 
 <br>
+
+
 
 * conf de base
 
@@ -39,6 +45,8 @@ output {
 
 
 <br>
+
+
 * autres options
 		* acks : 0, 1, all
 		* message_key : ordre des message

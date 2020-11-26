@@ -6,9 +6,13 @@
 
 
 <br>
+
+
 * mutate = modification/ajout variée et manipulation de ligne reçue
 
 <br>
+
+
 Liste des blocs possibles : 
 	* coerce : valeur par défaut
 	* rename : changer le nom d'un champs
@@ -32,9 +36,13 @@ Liste des blocs possibles :
 
 
 <br>
+
+
 12/01/2019;poster une vidéo ? - ou quoi ?;xavki.com;XAVKI;1;2;;changement de nom;replace
 
 <br>
+
+
 ```
 filter {
   csv {

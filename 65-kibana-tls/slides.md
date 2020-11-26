@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * exemple avec un certificat autosigné / openssl
 
 * utilisation de TLS 1.2
@@ -15,6 +17,8 @@
 		* nginx frontal = avec redirection possible et passwd (si nécessaire)
 
 <br>
+
+
 SOLUTION KIBANA
 
 * génération du certificat
@@ -24,6 +28,8 @@ openssl req -x509 -newkey rsa:2048 -nodes -keyout kibana.key -out kibana.crt -da
 ```
 
 <br>
+
+
 * création d'un répertoire et placement des fichiers
 
 ```
@@ -35,6 +41,8 @@ chmod 400 /etc/kibana/certs/kibana.*
 ```
 
 <br>
+
+
 * configuration /etc/kibana/kibana.yml
 
 ```

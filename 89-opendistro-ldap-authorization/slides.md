@@ -6,15 +6,21 @@
 
 
 <br>
+
+
 * prérequis : cluster ES + LDAP (cf vagrantfile)
 
 
 <br>
+
+
 * Authentication <> Authorization
 
 * accès <> permissions
 
 <br>
+
+
 * user LDAP : Alice/password
 
 * source uid :

@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 Filebeat
 
 * désactivation module nginx
@@ -37,6 +39,8 @@ output.logstash:
 
 
 <br>
+
+
 * configuration de logstash (idem vidéo 5) : modification input
 
 ```

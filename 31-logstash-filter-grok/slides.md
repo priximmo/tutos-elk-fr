@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * INPUT > FILTER > OUTPUT
 
 * Filter grok = parsing de données non structurées (non linéaire par exemple)
@@ -13,6 +15,8 @@
 * utilisation de regulars expressions
 
 <br>
+
+
 * format
 
 ```
@@ -26,6 +30,8 @@ PS :
 			* défaut string, uniquement vers int/float
 
 <br>
+
+
 ```
 %{SYNTAX1:VAR1} %{SYNTAX2:VAR2} %{SYNTAX3:VAR3} %{SYNTAX1:VAR4}
 ```
@@ -33,6 +39,8 @@ PS :
 PS : une syntax peut en intégrer d'autres
 
 <br>
+
+
 * dissect VS grok :
 		* grok = regex > plus forte variations du pattern
 		* dissect plus rapide
@@ -44,6 +52,8 @@ PS : une syntax peut en intégrer d'autres
 
 
 <br>
+
+
 * Liste de SYNTAX : https://github.com/logstash-plugins/logstash-patterns-core/blob/master/patterns/grok-patterns
 
 * Communs :
@@ -68,11 +78,15 @@ PS : une syntax peut en intégrer d'autres
 
 
 <br>
+
+
 * Construction via 
 		* kibana > dev_tools > grokdebugger
 		* https://grokdebug.herokuapp.com/ (patterns tout prêts)
 
 <br>
+
+
 * exemple :
 
 ```
@@ -80,6 +94,8 @@ PS : une syntax peut en intégrer d'autres
 ```
 
 <br>
+
+
 * décortiquons :
 		* ip ou hostname >> IPORHOST
 		* date avec quel format >> DATE_EU
@@ -92,6 +108,8 @@ PS : une syntax peut en intégrer d'autres
 		* un nombre à décimales >> NUMBER
 
 <br>
+
+
 * résultat
 
 ```
@@ -105,6 +123,8 @@ PS : une syntax peut en intégrer d'autres
 
 
 <br>
+
+
 OPTIONS :
 
 * overwrite
@@ -119,6 +139,8 @@ OPTIONS :
 ```
 
 <br>
+
+
 * break_on_match : arrêt dès le premier matching
 
 * custom pattern : cf prochaine vidéo

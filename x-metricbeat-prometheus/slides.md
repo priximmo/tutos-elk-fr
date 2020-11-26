@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 metricbeat.modules:
 - module: prometheus
   metricsets: ["collector"]

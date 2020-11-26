@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * exécution d'une commande classique
 
 * attention : logstash n'est pas souvent le bon choix
@@ -13,6 +15,8 @@
 * bash / python / ruby / perl
 
 <br>
+
+
 * principe :
 
 ```
@@ -30,6 +34,8 @@ PS : gestion du timing
 		* schedule : 0 \* \* \* \* (façon linux)
 
 <br>
+
+
 * add_field => { "env" => "prod" }
 
 * type => "mybeat"
@@ -43,6 +49,8 @@ PS : gestion du timing
 
 
 <br>
+
+
 * et en TCP ? pull ou push ?
 
 * mode => "server"
@@ -71,6 +79,8 @@ nc 192.169.20.102 11111
 
 
 <br>
+
+
 * en mode client ?
 
 ```

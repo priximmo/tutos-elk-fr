@@ -6,9 +6,13 @@
 
 
 <br>
+
+
 * collecte de logs postgres (y compris requêtes)
 
 <br>
+
+
 * installation de postgresql
 
 ```
@@ -16,6 +20,8 @@ apt install postgresql
 ```
 
 <br>
+
+
 * configuration du niveau de log
 
 ```
@@ -27,6 +33,8 @@ log_statement = 'all'   #ddl...
 
 
 <br>
+
+
 * configuration de filbeat et de son module postgresql
 
 ```

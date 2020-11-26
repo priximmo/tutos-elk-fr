@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * visualisation
 
 * exploitation
@@ -15,6 +17,8 @@
 * jeux de données exemples
 
 <br>
+
+
 * debian :
 
 ```
@@ -27,6 +31,8 @@ sudo systemctl enable kibana
 ```
 
 <br>
+
+
 * centos :
 
 ```

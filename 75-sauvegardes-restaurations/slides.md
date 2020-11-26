@@ -5,9 +5,13 @@
 # ElasticSearch : Sauvegardes et Restauration
 
 <br>
+
+
 doc : https://www.elastic.co/guide/en/elasticsearch/reference/current/snapshot-restore.html
 
 <br>
+
+
 * nécessité de déclarer et créer un repo
 
 ```
@@ -24,6 +28,8 @@ systemctl restart elasticsearch
 ```
 
 <br>
+
+
 * déclaration du repo
 
 ```

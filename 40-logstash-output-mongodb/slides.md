@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * installation de mongodb
 
 ```
@@ -16,6 +18,8 @@ sudo apt install mongodb-org
 ```
 
 <br>
+
+
 * création de la DB :
 
 ```
@@ -29,6 +33,8 @@ use xavkidb
 
 
 <br>
+
+
 * cf configuration de logstash + cf fichier
 
 ```
@@ -37,6 +43,8 @@ use xavkidb
 
 
 <br>
+
+
 * lister les documents
 
 ```

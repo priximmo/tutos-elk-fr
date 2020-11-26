@@ -6,15 +6,21 @@
 
 
 <br>
+
+
 * prérequis : cluster ES + LDAP (cf vagrantfile)
 
 
 <br>
+
+
 * Authentication <> Authorization
 
 * accès <> permissions
 
 <br>
+
+
 * user LDAP : Alice/password
 
 * source uid :
@@ -30,11 +36,15 @@ ldapsearch -x -LLL -H ldap://192.168.20.124 -b 'dc=example,dc=com' uid
 
 
 <br>
+
+
 * mise à jour config.yml
 
 /usr/share/elasticsearch/plugins/opendistro_security/tools/securityadmin.sh /usr/share/elasticsearch/plugins/opendistro_security/securityconfig -icl -nhnv -cacert /etc/elasticsearch/root-ca.pem -cert /etc/elasticsearch/kirk.pem -key /etc/elasticsearch/kirk-key.pem
 
 <br>
+
+
 * création d'un nouveau user
 
 * hash du password + fichier
@@ -52,6 +62,8 @@ ldapwhoami -vvv -h 192.168.20.124 -p 389 -D 'uid=xavki,ou=people,dc=example,dc=c
 
 
 <br>
+
+
 * check
 
 ```

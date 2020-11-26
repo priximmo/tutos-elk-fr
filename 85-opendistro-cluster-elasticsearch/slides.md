@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 modifier le /etc/elasticsearch/elasticsearch.yml
 
 ```
@@ -45,6 +47,8 @@ node.max_local_storage_nodes: 3
 
 <br>
 
+
+
 * password ADMIN et KIBANASERVER
 
 ```
@@ -58,6 +62,8 @@ vim /usr/share/elasticsearch/plugins/opendistro_security/securityconfig/internal
 
 
 <br>
+
+
 * installation kibana
 
 ```

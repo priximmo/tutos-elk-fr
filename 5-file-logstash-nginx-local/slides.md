@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * configuration logstash
 
 * input / filter / output
@@ -13,6 +15,8 @@
 * filter > grok
 
 <br>
+
+
 * exemple qui n'existe pas dans la vraie vie
 
 exporter les logs nginx vers ELK...
@@ -26,6 +30,8 @@ sur la même machine
 
 
 <br>
+
+
 * nginx pour logstash
 
 ```
@@ -34,6 +40,8 @@ sudo usermod -aG adm logstash
 ```
 
 <br>
+
+
 * fichier de patterns
 
 ```

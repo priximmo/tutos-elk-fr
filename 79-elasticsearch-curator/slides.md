@@ -6,12 +6,18 @@
 
 
 <br>
+
+
 * doc https://www.elastic.co/guide/en/elasticsearch/client/curator/5.8/index.html
 
 <br>
+
+
 * deux binaires : curator_cli et curator
 
 <br>
+
+
 * manager vos index en automatisant :
 		* aliases
 		* create/delete index
@@ -24,6 +30,8 @@
 		* cluster/shard routing...
 
 <br>
+
+
 * installation debian
 
 ```
@@ -41,6 +49,8 @@ curator --help
 
 
 <br>
+
+
 * fichier de configuration (connexion)
 
 ```

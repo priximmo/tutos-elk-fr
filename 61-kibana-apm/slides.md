@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * APM :
 		* métriques systèmes : cpu, mémoire...
 		* métriques spécifiques :pods, container
@@ -15,6 +17,8 @@
 		* alerting sur seuil (mail possible)
 
 <br>
+
+
 * configuration (similaire filebeat) :
 		* output : elasticsearch, kafka...
 		* tls/ssl
@@ -23,6 +27,8 @@
 		* Real User Monitoring = javascript (capture partie navigateur)
 
 <br>
+
+
 * principe :
 		app > lib apm > server local APM > elasticsearch > kibana
 
@@ -33,6 +39,8 @@
 
 
 <br>
+
+
 * installation d'un service (ex : api)
 
 ```
@@ -42,6 +50,8 @@ pip3 install elastic-apm flask
 
 
 <br>
+
+
 * installation du server APM
 
 ```
@@ -50,6 +60,8 @@ sudo dpkg -i /opt/apm*.deb
 ```
 
 <br>
+
+
 * configuration à minima elasticsearch
 
 

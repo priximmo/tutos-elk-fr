@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 1er cas : le grok de grok (en deux temps)
 
 * parfois plus intéressant que de faire des regex complex (performance)
@@ -36,6 +38,8 @@ filter {
 
 
 <br>
+
+
 CUSTOM PATTERNS
 
 * modèle :
@@ -47,6 +51,8 @@ CUSTOM PATTERNS
 PS : format regex like  https://github.com/kkos/oniguruma/blob/master/doc/RE
 
 <br>
+
+
 * exemple
 
 ```
@@ -58,6 +64,8 @@ PS : format regex like  https://github.com/kkos/oniguruma/blob/master/doc/RE
 ```
 
 <br>
+
+
 PATTERNS_DIR
 
 * stockage de patterns via le patterns_dir

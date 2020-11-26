@@ -6,12 +6,16 @@
 
 
 <br>
+
+
 * un alias = lien symbolique vers un index
 		* rendre transparente des opérations
 				* ex : lifecycle management
 				* ou reindex
 
 <br>
+
+
 * liste des alias
 
 ```
@@ -23,6 +27,8 @@ curl 192.168.20.102:9200/_cat/aliases
 # ElasticSearch : reindex et aliases
 
 <br>
+
+
 * création d'un alias
 
 ```
@@ -51,6 +57,8 @@ curl 192.168.20.102:9200/myalias/_search?pretty
 # ElasticSearch : reindex et aliases
 
 <br>
+
+
 * création d'un nouvel index avec nouveau mapping
 
 ```
@@ -81,6 +89,8 @@ curl -X PUT http://192.168.20.102:9200/communes2 -H "Content-Type: application/j
 
 
 <br>
+
+
 * réindexation
 
 ```
@@ -99,6 +109,8 @@ curl -XPOST http://192.168.20.102:9200/_reindex -H "Content-Type: application/js
 ```
 
 <br>
+
+
 * déplacement de l'alias
 
 ```

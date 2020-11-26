@@ -6,9 +6,13 @@
 
 
 <br>
+
+
 * type beat = écoute des producteurs de type beat
 
 <br>
+
+
 * exemples :
 		* filebeat		: envoi de fichiers
 		* metricbeat	: métriques
@@ -18,6 +22,8 @@
 		* heartbeat 	: disponibilité
 
 <br>
+
+
 * principe d'écoute
 		* ip/interface et ports
 
@@ -29,6 +35,8 @@
 
 
 <br>
+
+
 * modèle :
 
 ```
@@ -45,15 +53,23 @@ output {
 ```
 
 <br>
+
+
 * host => "0.0.0.0"			> ip en écoute
 
 <br>
+
+
 * port => 5044					> obligatoire
 
 <br>
+
+
 * ssl : cf vidéo 14
 
 <br>
+
+
 * add_field => { "env" => "prod" }
 
 * type => "mybeat"
@@ -67,6 +83,8 @@ output {
 
 
 <br>
+
+
 * multi-input
 
 ```

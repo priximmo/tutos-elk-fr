@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * input http :
 		* réception de requêtes http (appli, curl...)
 
@@ -25,6 +27,8 @@ output {
 ```
 
 <br>
+
+
 * envoi
 
 ```
@@ -37,6 +41,8 @@ curl -H "content-type: application/json" -d '{"champs1": "monom",champs2": "salu
 
 
 <br>
+
+
 Quelques options :
 
 * response_code

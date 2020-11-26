@@ -6,10 +6,14 @@
 
 
 <br>
+
+
 * INPUT > FILTER > OUTPUT
 
 
 <br>
+
+
 * output : très nombreux
 		* file
 		* elasticsearch
@@ -33,6 +37,8 @@
 
 
 <br>
+
+
 FILE
 
 * la base
@@ -46,6 +52,8 @@ output {
 ```
 
 <br>
+
+
 OPTIONS
 
 * create_if_deleted : true default > créer ou pas le fichier
@@ -66,6 +74,8 @@ OPTIONS
 
 
 <br>
+
+
 CSV
 
 * idem file (fields obligatoire)
@@ -89,6 +99,8 @@ output {
 
 
 <br>
+
+
 * ajout du plugin
 
 ```
@@ -96,6 +108,8 @@ bin/logstash-plugin install logstash-output-exec
 ```
 
 <br>
+
+
 * configuration
 
 ```

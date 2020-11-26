@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * changer le nombre de replicas
 
 ```
@@ -21,6 +23,8 @@ curl -XPUT -H "Content-Type: application/json" 192.168.20.102:9200/filebeat*/_se
 ```
 
 <br>
+
+
 * exemple : ElasticHQ | https://github.com/ElasticHQ/elasticsearch-HQ
 
 ```

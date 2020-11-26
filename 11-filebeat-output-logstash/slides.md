@@ -5,6 +5,8 @@
 # Filebeat : Output Logstash
 
 <br>
+
+
 * loadbalancing
 
 ```
@@ -14,6 +16,8 @@ output.logstash:
 ```
 
 <br>
+
+
 * compression_level
 
 * worker : nombre de worker par host

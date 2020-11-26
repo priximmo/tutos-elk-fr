@@ -6,9 +6,13 @@
 
 
 <br>
+
+
 * manipuler elasticsearch par des curl ~ évident
 
 <br>
+
+
 * changer le nombre de replicas
 
 ```
@@ -24,6 +28,8 @@ curl -XPUT -H "Content-Type: application/json" 192.168.20.102:9200/filebeat*/_se
 ```
 
 <br>
+
+
 * exemple : CEREBRO | https://github.com/lmenezes/cerebro
 
 ```

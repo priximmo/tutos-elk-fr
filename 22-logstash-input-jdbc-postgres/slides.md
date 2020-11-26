@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * installation du driver postgresql pour JDBC
 
 ```
@@ -14,6 +16,8 @@ chmod 755 /usr/share/logstash/lib/postgresql-42.2.13.jar
 ```
 
 <br>
+
+
 * création postgres : USER/DB/TABLE
 
 ```
@@ -44,6 +48,8 @@ apt install postgresql-client-10
 
 
 <br>
+
+
 * configuration logstash
 
 ```
@@ -75,9 +81,13 @@ Rq : id / champs de référence
 
 
 <br>
+
+
 * des champs complémentaires : add_fields, id, tags, type
 
 <br>
+
+
 * parameter => { "target_id" => "321" } : passer des paramètres
 
 * schedule => "\* \* \* \* \*" 

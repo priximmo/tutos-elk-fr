@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * date importante dans ELK => timestamp des évènements
 
 * défaut => date de la collecte = date timestamp
@@ -14,6 +16,8 @@
 * plugin date permet de parser un champs pour en définir une date
 
 <br>
+
+
 * deux types d'opérations :
 		* parsing
 		* conversion
@@ -24,6 +28,8 @@
 
 
 <br>
+
+
 PARSING :
 
 * utiliser un pattern pour récupérer la date
@@ -46,6 +52,8 @@ filter {
 
 
 <br>
+
+
 CONVERSION : 
 
 ```

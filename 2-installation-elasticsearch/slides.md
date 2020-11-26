@@ -7,9 +7,13 @@
 
 <br>
 
+
+
 * nosql : atout principal c'est la facilité à disposer d'un système distribué
 
 <br>
+
+
 Principaux:
 
 * elasticsearch : capacité/qualité d'indexation et donc de recherche
@@ -21,6 +25,8 @@ Principaux:
 * redis : in memory donc très rapide (requêtage limité)
 
 <br>
+
+
 Elasticsearch :
   * indexation de tous les mots des documents
   * qualité de la recherche
@@ -33,19 +39,27 @@ Elasticsearch :
 
 
 <br>
+
+
 * Cluster : ensemble de serveurs (noeuds ayant elasticsearch / même id de cluster)
       - communication via port 9300
       - haute dispo : perfomance et redondance
 
 <br>
+
+
 * Noeuds : serveur ayant un service elastic
       - différents type : master, data, client...
 
 <br>
+
+
 * Index : une instance de base de données
       - un à plusieurs par serveur (et cluster)
 
 <br>
+
+
 * Shards: découpage logique d'un index (un à plusieurs shards)
       - répartition des shards sur plusieurs noeuds (répartir un index)
       - joue sur les performances
@@ -53,11 +67,15 @@ Elasticsearch :
       - important pour déterminer nb max de noeuds
 
 <br>
+
+
 * Réplicas : réplicas de shards d'un index
       - redondance
       - mais aussi performance (interrogeables)
 
 <br>
+
+
 * requête : via API et somme des résultats de tous les shards
 
 
@@ -68,11 +86,15 @@ Elasticsearch :
 
 
 <br>
+
+
 * via les packages
 
 * via docker
 
 <br>
+
+
 * sur debian 
 
 ```
@@ -87,6 +109,8 @@ systemctl start elasticsearch
 ```
 
 <br>
+
+
 * sur centos
 
 ```
@@ -109,6 +133,8 @@ systemctl start elasticsearch
 
 
 <br>
+
+
 * docker :
 
 ```
@@ -116,6 +142,8 @@ https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html
 ```
 
 <br>
+
+
 * check
 
 ```

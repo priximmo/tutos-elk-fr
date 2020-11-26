@@ -6,11 +6,15 @@
 
 
 <br>
+
+
 * mapping : structure des documents/index
 
 * caractéristiques,noms des champs, sharding, réplicas...
 
 <br>
+
+
 * sans template > elastic et logstash font ce qu'ils veulent (valeurs par défaut...)
 
 * peux poser des problème pour exploiter les datas
@@ -29,6 +33,8 @@
 
 
 <br>
+
+
 * création du mapping dans Elasticsearch au lancement de logstash
 
 ```

@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * filebeat = beat
 
 * action régulière de push si nécessaire
@@ -30,6 +32,8 @@
 
 
 <br>
+
+
 * installation
 
 ```
@@ -38,6 +42,8 @@ sudo dpkg -i /opt/filebeat*.deb
 ```
 
 <br>
+
+
 * module filebeat
 
 ```

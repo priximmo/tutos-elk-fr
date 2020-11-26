@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 DISSECT
 
 * pattern de déouverte (champs/valeur)
@@ -35,6 +37,8 @@ ex :
 
 
 <br>
+
+
 CIDR
 
 * check d'ip et action si valide
@@ -54,6 +58,8 @@ CIDR
 
 
 <br>
+
+
 ALTER
 
 ```

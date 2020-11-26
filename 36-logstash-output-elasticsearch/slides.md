@@ -6,12 +6,18 @@
 
 
 <br>
+
+
 * ELK > output le plus répanu
 
 <br>
+
+
 * beaucoup d'options
 
 <br>
+
+
 * minima :
 
 ```
@@ -29,6 +35,8 @@ output {
 
 
 <br>
+
+
 * éclater en plusieurs index
 
 ```
@@ -56,6 +64,8 @@ output {
 
 
 <br>
+
+
 * hosts : liste des machines du cluster (load-balancing, sans les master)
 
 * index : nom ou template de nom avec variable "logstash-%{+yyyy.MM.dd}"
@@ -90,6 +100,8 @@ output {
 
 
 <br>
+
+
 * ILM : index lifecyle management > rotate
 
 * template management : persistence dans la structure des index

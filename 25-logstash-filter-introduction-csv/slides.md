@@ -6,16 +6,22 @@
 
 
 <br>
+
+
 * Logstash = Extract Transfert Load (ETL)
 
 * processer de la données (manipuler...)
 
 <br>
+
+
 * configuration :
 		* input/filter/output
 		* milieu de pipeline pour travailler la data
 
 <br>
+
+
 * filters
 		* parser les éléments (une ligne >> extraire des champs)
 		* conversion : champs > date ou taille > chiffres
@@ -35,6 +41,8 @@
 # LOGSTASH : FILTERS
 
 <br>
+
+
 EXEMPLE CSV
 
 ```
@@ -45,6 +53,8 @@ filter {
 ```
 
 <br>
+
+
 * options :
 		* columns : définition des entêtes
 		* delimiter : délimitation des champs (défaut ",")

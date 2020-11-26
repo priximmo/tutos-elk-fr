@@ -6,11 +6,15 @@
 
 
 <br>
+
+
 * plugins : input / filter / output
 
 * dépôt : https://github.com/logstash-plugins
 
 <br>
+
+
 * liste des plugins :
 
 ```
@@ -18,6 +22,8 @@
 ```
 
 <br>
+
+
 * deux types instalations :
 		* en ligne
 		* hors ligne
@@ -28,6 +34,8 @@
 
 
 <br>
+
+
 HORS LIGNE :
 
 * préparation du plugin
@@ -58,9 +66,13 @@ logstash -e 'filter {alter {}}'
 
 
 <br>
+
+
 EN LIGNE : 
 
 <br>
+
+
 * check
 
 ```
@@ -69,6 +81,8 @@ EN LIGNE :
 
 
 <br>
+
+
 * installation
 
 ```
@@ -76,6 +90,8 @@ EN LIGNE :
 ```
 
 <br>
+
+
 * vérification
 
 ```
@@ -89,6 +105,8 @@ logstash -e 'filter {bytes {}}'
 
 
 <br>
+
+
 * mise à jour
 
 ```
@@ -96,6 +114,8 @@ bin/logstash-plugin update logstash-filter-bytes
 ```
 
 <br>
+
+
 * suppression
 
 ```

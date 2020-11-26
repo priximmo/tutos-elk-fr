@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * suppression de l'index de test :
 
 ```
@@ -28,6 +30,8 @@
 
 
 <br>
+
+
 * création de l'index du jour suivant :
 
 ```

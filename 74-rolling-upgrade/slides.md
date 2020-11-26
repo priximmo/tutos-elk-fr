@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * 3 noeuds : 7.6.1 > 7.8.0
 
 * doc : https://www.elastic.co/guide/en/elasticsearch/reference/current/rolling-upgrades.html

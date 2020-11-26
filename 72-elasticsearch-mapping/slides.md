@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * créer le mapping d'un index
 
 ```
@@ -23,6 +25,8 @@ curl -X PUT http://192.168.20.102:9200/utilisateurs \
 ```
 
 <br>
+
+
 * types de champs: https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-types.html
 		* text vs keyword > full text vs filtering/ordering 
 
@@ -32,6 +36,8 @@ curl -X PUT http://192.168.20.102:9200/utilisateurs \
 
 
 <br>
+
+
 * ajouter un document : méthode classique (1 à 1)
 
 ```
@@ -42,6 +48,8 @@ curl -XPOST -H 'Content-Type: application/json' 192.168.20.102:9200/utilisateurs
 Rq : cf jq
 
 <br>
+
+
 * ajouter des documents dans un même index : méthode bulk (plusieurs en une fois)
 
 ```
@@ -61,7 +69,11 @@ curl -XPOST -H 'Content-Type: application/x-ndjson' 192.168.20.102:9200/utilisat
 
 
 <br>
+
+
 <br>
+
+
 * bulk dans différents index
 
 ```
@@ -76,6 +88,8 @@ curl -XPOST -H 'Content-Type: application/x-ndjson' 192.168.20.102:9200/_bulk --
 ```
 
 <br>
+
+
 * mise à jour d'une donnée
 
 ```

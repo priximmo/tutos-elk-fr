@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * récupérer des infos d'un index :
 
 ```
@@ -39,27 +41,43 @@ PS : logstash boucle...
 
 
 <br>
+
+
 * test avec elasticsearch en output cf fichier joint
 
 <br>
+
+
 * docinfo => true		> informations complémentaires index/type/id
 
 <br>
+
+
 * docinfo_fields => ["_index"] > filtrer les info de docinfo
 
 <br>
+
+
 * schedule => "0 * * * *"  > check croné
 
 <br>
+
+
 * scroll => "1m"  > maintien de la requête pendant une durée
 
 <br>
+
+
 * size => 1000		> nombre d'éléments ramenés
 
 <br>
+
+
 * add_fields / tags / type
 
 <br>
+
+
 * query (cf demo)
 
 -----------------------------------------------------------------------------------
@@ -68,6 +86,8 @@ PS : logstash boucle...
 
 
 <br>
+
+
 * ajouter une query pour filtrer
 
 ```

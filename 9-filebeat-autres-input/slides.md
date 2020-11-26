@@ -5,6 +5,8 @@
 # Filebeat : Input autres
 
 <br>
+
+
 * liste des input
 
 ```
@@ -33,6 +35,8 @@
 
 
 <br>
+
+
 * container : idem input log + stream (all/stdout/stderr...)
 
 ```
@@ -51,6 +55,8 @@ fichier joint
 
 
 <br>
+
+
 * tcp : test via netcat
 
 ```

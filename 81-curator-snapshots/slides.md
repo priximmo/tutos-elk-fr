@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * installation serveur nfs
 
 ```
@@ -50,6 +52,8 @@ sudo chown elasticsearch:elasticsearch /exports/backup
 ```
 
 <br>
+
+
 * création du repo sur elasticsearch.yml sur tous les noeuds
 
 ```
@@ -64,6 +68,8 @@ curl -XPUT '192.168.20.102:9200/_snapshot/cur_backup' -H 'Content-Type: applicat
 ```
 
 <br>
+
+
 UTILISATION DE CURATOR
 
 * snapshot curator :
@@ -94,6 +100,8 @@ actions:
 ```
 
 <br>
+
+
 * ajout restauration dans la foulée
 
 ```

@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * installation de kibana :
 
 ```
@@ -13,6 +15,8 @@ sudo apt install opendistroforelasticsearch-kibana
 ```
 
 <br>
+
+
 * changemenet de la conf /etc/kibana/kibana.yml
 
 ```
@@ -20,11 +24,15 @@ server.host: "0.0.0.0"
 ```
 
 <br>
+
+
 * connexion
 
 admin/admin
 
 <br>
+
+
 * génération d'un hash
 
 ```

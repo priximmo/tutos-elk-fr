@@ -5,6 +5,8 @@
 # KIBANA : Discover - Lucene
 
 <br>
+
+
 * caractères inconnus
 
 ```
@@ -13,6 +15,8 @@ machine.os: w?n
 
 
 <br>
+
+
 * approximation
 
 ```
@@ -21,6 +25,8 @@ machine.os: wip~0.2
 ```
 
 <br>
+
+
 * proximité
 
 ```

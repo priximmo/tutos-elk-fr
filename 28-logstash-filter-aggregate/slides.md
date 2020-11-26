@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * aggregate = gestion d'events
 
 * utilisation de map/tableaux pour retravailler des blocs de d'informations
@@ -14,6 +16,8 @@
 * utilisation de pseudo "code" spécifique
 
 <br>
+
+
 * aggregate :
 		* task_id : identification du bloc (tâche)
 		* aggregate_maps_path : localisation du stockage des maps
@@ -30,4 +34,6 @@
 
 
 <br>
+
+
 

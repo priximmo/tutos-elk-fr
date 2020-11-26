@@ -6,9 +6,13 @@
 
 
 <br>
+
+
 * index > shards | replicas > documents > fields
 
 <br>
+
+
 * santé du cluster
 
 ```
@@ -16,6 +20,8 @@ curl -XGET 127.0.0.1:9200/_cluster/health
 ```
 
 <br>
+
+
 * on repart d'un filebeat/nginx pour la démo
 
 ```
@@ -33,6 +39,8 @@ systemctl start filebeat
 
 
 <br>
+
+
 * quelques verbes utiles :
 
 GET : récupérer des datas
@@ -41,6 +49,8 @@ PUT : création de datas
 DELETE : suppression
 
 <br>
+
+
 * lister les index
 
 ```
@@ -48,6 +58,8 @@ curl -XGET 192.168.20.102:9200/_cat/indices
 ```
 
 <br>
+
+
 * lister les documents d'un index
 
 ```
@@ -55,6 +67,8 @@ curl -XGET 192.168.20.102:9200/filebeat*/_search?pretty
 ```
 
 <br>
+
+
 * créer un index
 
 ```
@@ -62,6 +76,8 @@ curl -XPUT 192.168.20.102:9200/xavki
 ```
 
 <br>
+
+
 * créer un document
 
 ```
@@ -70,6 +86,8 @@ curl -XGET http://192.168.20.102:9200/xavki/_doc/1
 ```
 
 <br>
+
+
 * suppression d'un index
 
 ```
